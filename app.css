@@ -1,0 +1,44 @@
+body {
+    background-color: #e6e6e6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.red {
+    border-color: red;
+}
+
+.white {
+    color: white;
+}
+
+.navbar-red {
+    background-color: #d41f1f;
+    overflow: hidden;
+}
+
+#menu-button {
+    display: none;
+}

@@ -8,7 +8,19 @@ header {
     left: 0;
     width: 100%;
 }
-
+.navbar-brand {
+    height: 70px;
+  }
+  
+ .nav >li >a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+.navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+  }
+  
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -42,3 +54,10 @@ header {
 #menu-button {
     display: none;
 }
+
+@media screen and (max-width: 600px) {
+    .navbar-red {
+        background-color: #ed1c24;
+      overflow: hidden;
+    }
+  }

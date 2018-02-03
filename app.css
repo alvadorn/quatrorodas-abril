@@ -1,5 +1,7 @@
 body {
     background-color: #e6e6e6;
+    padding-top: 175px;
+    text-transform: uppercase;
 }
 
 header {
@@ -8,19 +10,21 @@ header {
     left: 0;
     width: 100%;
 }
+
 .navbar-brand {
     height: 70px;
-  }
-  
- .nav >li >a {
+}
+
+.nav>li>a {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
+}
+
 .navbar-toggle {
     padding: 10px;
     margin: 25px 15px 25px 0;
-  }
-  
+}
+
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -43,11 +47,11 @@ header {
 }
 
 .white {
-    color: white;
+    border-color: white;
 }
 
 .navbar-red {
-    background-color: #d41f1f;
+    background-color: #ed1c24;
     overflow: hidden;
 }
 
@@ -55,9 +59,121 @@ header {
     display: none;
 }
 
+#region-to-collpase>ul>li>a {
+    font-weight: bold;
+    color: white;
+}
+
+.searchbar {
+    padding: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.searchbar>input {
+    border: 1px solid white;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+#red-bar {
+    background-color: #d41f1f;
+    height: 50px;
+    margin-top: -2px;
+}
+
+#black-bar {
+    background-color: black;
+    height: 50px;
+    margin-top: -2px;
+}
+
+.snd-bar {
+    color: white;
+    font-weight: bold;
+}
+
+.snd-bar>a {
+    margin-top: 20px;
+}
+
+.hotnews {
+    margin-top: 2px;
+}
+
+.first-hotnews {
+    max-width: 100%;
+}
+
+.fix-padding {
+    padding: 0 !important;
+    margin-top: 10px !important;
+}
+
+.white-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    font-weight: bold;
+}
+
+.high-tier {
+    overflow: hidden;
+    display: block;
+    object-fit: fill;
+}
+
+.high-tier>img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.h3-tag {
+    left: 80%;
+    top: 58%;
+    position: absolute;
+    margin-top: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+h4 {
+    position: absolute;
+    top: 80%;
+    display: block;
+    left: 30%;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font: "Dosis";
+    margin-right: 5px;
+}
+
 @media screen and (max-width: 600px) {
     .navbar-red {
         background-color: #ed1c24;
-      overflow: hidden;
+        overflow: hidden;
     }
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+  }
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
   }

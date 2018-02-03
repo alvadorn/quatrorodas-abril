@@ -1,45 +1,116 @@
 <html>
-    <head>
-        <meta name="viewport" content="initial-scale=1,width=device-width">
-        <title>Quatro Rodas</title>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
 
-        <header>
-                <div id="adbanner">
-                        <img src="imgs/banner.png" class="img-responsive center-block" alt="banner"/>
-                    </div>
-            <nav class="navbar navbar-red">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#region-to-collapse" aria-expanded="false">
-                        <span class="sr-only"></span>
+<head>
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <title>Quatro Rodas</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="adbanner">
+            <img src="imgs/banner.png" class="img-responsive center-block" alt="banner" />
+        </div>
+        <nav class="navbar navbar-default navbar-red">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"  id="menu-expand" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation!</span>
+                        <span class="icon-bar white-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                   </button>
-                   <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="Quatro Rodas" class="img-responsive fix-logo"/></a>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/logo.png" alt="Quatro Rodas" class="img-responsive fix-logo" />
+                    </a>
                 </div>
-                <div class="collapse navbar-collapse" id="region-to-collpase">
+                <div class="collapse navbar-collapse" id="region-to-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown"><a href="#">Carros</a></li>
-                        <li class="dropdown"><a href="#">Testes</a></li>
-                        <li class="dropdown"><a href="#">Notícias</a></li>
-                        <li class="dropdown"><a href="#">Auto-Serviço</a</li>
-                        <li><a href="#">Guia de Compras</a></li>
-                        <li class="dropdown"><a href="#">Tabela Fipe</a></li>
-                        <li><a href="#">Assine</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">CARROS
+                                <i class="arrow down white"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">TESTES
+                                <i class="arrow down white"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">NOTÍCIAS
+                                <i class="arrow down white"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">AUTO-SERVIÇO
+                                <i class="arrow down white"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">GUIA DE COMPRA</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">TABELA FIPE
+                                <i class="arrow down white"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">ASSINE</a>
+                        </li>
+                        <li>
+                            <form class="navbar-form navbar-right searchbar">
+                                <input type="text" placeholder="Pesquisar">
+                            </form>
+                        </li>
+                        <li></li>
                     </ul>
-                    <form class="navbar-form">
-                        <input type="text" class="form-control" placeholder="Pesquisar">
-                    </form>
                 </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="col-md-2" id="red-bar">
+        <a href="#" class="snd-bar">+ACESSADOS</a>
+    </div>
+    <div class="col-md-10" id="black-bar"></div>
+
+    <div class="container-fluid hotnews">
+
+        <section>
+            <div class="row">
+                <div class="col-md-6 fix-padding">
+                    <a href="#" class="first-hotnews">
+                        <h3 class="h3-tag">
+                            Rápido e Mortal
+                        </h3>
+                        <figure class="high-tier">
+                            <img src="imgs/li1.jpg" alt="Novo Audi TT RS chega ao Brasil com desempenho de Ferrari" />
+                        </figure>
+                        <h4>Novo Audi TT RS chega ao Brasil com desempenho de Ferrari</h4>
+                    </a>
                 </div>
-            </nav>
-        </header>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="app.js"></script>
-    </body>
+                <div class="col-md-6 fix-padding">
+                    <ul>
+                        <li>
+
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+   
+    <script src="app.js"></script>
+</body>
+
 </html>

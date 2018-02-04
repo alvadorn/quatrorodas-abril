@@ -91,9 +91,13 @@ header {
 .snd-bar {
     color: white;
     font-weight: bold;
+    top: 30%;
+    left: 20%;
+    position: absolute;
 }
 
 .snd-bar>a {
+    top: 10%;
     margin-top: 20px;
 }
 

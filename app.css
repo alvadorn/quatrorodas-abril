@@ -59,7 +59,7 @@ header {
     display: none;
 }
 
-#region-to-collpase>ul>li>a {
+#region-to-collapse>ul>li>a {
     font-weight: bold;
     color: white;
 }
@@ -101,6 +101,7 @@ header {
     margin-top: 2px;
 }
 
+
 .first-hotnews {
     max-width: 100%;
 }
@@ -108,6 +109,11 @@ header {
 .fix-padding {
     padding: 0 !important;
     margin-top: 10px !important;
+}
+
+.fix-paddig-child {
+    padding: 0 !important;
+    margin-top: 0 !important;
 }
 
 .white-bar {
@@ -129,19 +135,20 @@ header {
     display: block;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .h3-tag {
     left: 80%;
-    top: 58%;
+    top: 70%;
+    display: block;
     position: absolute;
-    margin-top: 100px;
     color: white;
     font-weight: bold;
     font-size: 12px;
 }
 
-h4 {
+.h4 {
     position: absolute;
     top: 80%;
     display: block;
@@ -154,26 +161,110 @@ h4 {
     margin-right: 5px;
 }
 
+.h3-alts {
+    left: 70%;
+    top: 50%;
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.h4-alts {
+    position: absolute;
+    top: 60%;
+    display: block;
+    left: 30%;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font: "Dosis";
+    margin-right: 5px;
+}
+
+.alts {
+    object-fit: fill;
+    display: block;
+    overflow: hidden;
+}
+
+.alts img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#box2 ul li a {
+    padding: 0 !important;
+}
+
+#box2 ul {
+    padding: 0 !important;
+}
+
+#publicidade {
+    position:  static;
+    width: 90%;
+    height: 22.6%;
+    margin-left: 5%;
+}
+
 @media screen and (max-width: 600px) {
+
     .navbar-red {
         background-color: #ed1c24;
         overflow: hidden;
     }
+    .only-higher {
+        display: none;
+    }
+
+    .h3-tag {
+        text-align: right;
+        padding-right: 10px;
+        left: 60%;
+        top: 40%;
+        position: absolute;
+    }
+
+    .h4 {
+        position: absolute;
+        font-size: 16px;
+        top: 60%;
+    }
+
+    #first-hotnews {
+        padding: 0 !important;
+        margin-top: -50px !important;
+    }
+
+    #box2 {
+        padding: 0 !important;
+        margin-top: 1px !important;
+    }
+
+    .h3-alts {
+        text-align: right;
+        margin-right: 100px;
+        position: absolute;
+    }
 }
 
-.close {
-    float: right;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
 
-button.close {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-appearance: none;
-  }

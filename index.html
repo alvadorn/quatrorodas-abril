@@ -18,7 +18,7 @@
         <nav class="navbar navbar-default navbar-red">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"  id="menu-expand" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" id="menu-expand" aria-expanded="false">
                         <span class="sr-only">Toggle navigation!</span>
                         <span class="icon-bar white-bar"></span>
                         <span class="icon-bar"></span>
@@ -72,36 +72,66 @@
             </div>
         </nav>
     </header>
-
-    <div class="col-md-2" id="red-bar">
-        <a href="#" class="snd-bar">+ACESSADOS</a>
+    <div class="only-higher">
+        <div class="col-md-2" id="red-bar">
+            <a href="#" class="snd-bar">+ACESSADOS</a>
+        </div>
+        <div class="col-md-10" id="black-bar"></div>
     </div>
-    <div class="col-md-10" id="black-bar"></div>
-
     <div class="container-fluid hotnews">
 
         <section>
             <div class="row">
-                <div class="col-md-6 fix-padding">
+                <div class="col-md-6 fix-padding" id="first-hotnews">
                     <a href="#" class="first-hotnews">
-                        <h3 class="h3-tag">
-                            Rápido e Mortal
-                        </h3>
                         <figure class="high-tier">
                             <img src="imgs/li1.jpg" alt="Novo Audi TT RS chega ao Brasil com desempenho de Ferrari" />
                         </figure>
-                        <h4>Novo Audi TT RS chega ao Brasil com desempenho de Ferrari</h4>
+                        <h3 class="h3-tag">
+                            Rápido e Mortal
+                        </h3>
+                        <h4 class="h4">Novo Audi TT RS chega ao Brasil com desempenho de Ferrari</h4>
                     </a>
                 </div>
-                <div class="col-md-6 fix-padding">
+                <div class="col-md-6 fix-padding" id="box2">
                     <ul>
                         <li>
+                            <a href="#" class="snd-hotnews col-md-6 fix-padding-child">
+                                <figure class="alts">
+                                    <img src="imgs/li2.jpg" alt="É assim que se dirige um carro adaptado para PcD" />
+                                </figure>
+                                <h3 class="h3-alts">Notícias</h3>
+                                <h4 class="h4-alts">É assim que se dirige um carro adaptado para PcD</h4>
+                            </a>
 
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li >
+                            <a href="#" class="snd-hotnews col-md-6">
+                                    <figure class="alts">
+                                            <img src="imgs/publicidade2.png" alt="publicidade" id="publicidade"/>
+                                        </figure>
+                                        <h3 class="h3-alts"></h3>
+                                        <h4 class="h4-alts"></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="snd-hotnews col-md-6 fix-padding-child">
+                                <figure class="alts">
+                                    <img src="imgs/lt3.jpg" alt="VW Novo Jetta é flagrado rodando em São Bernardo do Campo (SP)">
+                                    <h3 class="h3-alts">Segredo</h3>
+                                    <h4 class="h4-alts">VW Novo Jetta é flagrado rodando em São Bernardo do Campo (SP)</h4>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="snd-hotnews col-md-6 fix-padding-child">
+                                <figure class="alts">
+                                    <img src="imgs/lt4.jpg" alt="Novo Honda City fica mais caro e segue sem ESP">
+                                    <h3 class="h3-alts">Lançamentos</h3>
+                                    <h4 class="h4-alts">Novo Honda City fica mais caro e segue sem ESP</h4>
+                                </figure>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -109,7 +139,7 @@
 
     </div>
 
-   
+
     <script src="app.js"></script>
 </body>
 
